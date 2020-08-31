@@ -1,2 +1,4 @@
 # HerdingProblem
-This repository contain source code to replicate herding problem simulations 
+This repository contain source code to replicate ROS simulations of the herding problem 
+
+
