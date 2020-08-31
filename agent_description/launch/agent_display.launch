@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<!-- Fabrizia Auletta -->
+<!-- fabrizia.auletta@bristol.ac.uk -->
+<!-- June 2020 -->
+
+<launch>
+
+  <arg name="model"/>
+  
+  <param name="robot_description" command="$(find xacro)/xacro $(find agent_description)/urdf/herd_robot_0.xacro" />
+  
+  
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d ${find agent_description}/urdf.rviz" required="true"/>
+
+</launch>
