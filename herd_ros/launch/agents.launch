@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+
+<!-- Fabrizia Auletta -->
+<!-- fabrizia.auletta@bristol.ac.uk -->
+<!-- June 2020 -->
+
+<launch>
+
+<arg name="my_string" default="it's moving"/>
+<arg name="herder_number" default="0"/>
+<arg name="target_number" default="0"/>
+
+
+<!-- task division node-->
+
+<node pkg="herd_ros" type="TaskDivisionRos.py" name = "TaskDivision" output="screen">
+<param name="taskDivision" value="global" />  <!--"global | static | leaderfollower | peer2peer"-->
+</node>
+
+<!-- herder agents nodes-->
+
+<node pkg="herd_ros" type="HerderStateRos" name = "HerderState_0" output="screen">
+<param name="my_string" value="$(arg my_test)" />
+<param name="herder_number" value="$(arg herder_number)" />
+</node>
+
+
+<node pkg="herd_ros" type="HerderStateRos" name = "HerderState_1" output="screen">
+<param name="my_string" value="$(arg my_test)" />
+<param name="herder_number" value="1" />
+</node>
+
+
+
+<!-- target agents nodes-->
+
+<node pkg="herd_ros" type="TargetStateRos" name = "TargetState_0" output="screen">
+<param name="my_string" value="wo shi" />
+<param name="target_number" value="0" />
+</node>
+
+
+<node pkg="herd_ros" type="TargetStateRos" name = "TargetState_1" output="screen">
+<param name="my_string" value="wo shi" />
+<param name="target_number" value="1" />
+</node>
+
+
+<node pkg="herd_ros" type="TargetStateRos" name = "TargetState_2" output="screen">
+<param name="my_string" value="wo shi" />
+<param name="target_number" value="2" />
+</node>
+
+<!-- Saving data on file node-->
+
+<node pkg="herd_ros" type="SaveDataRos" name="SaveData" output="screen"/>
+
+
+
+</launch>
