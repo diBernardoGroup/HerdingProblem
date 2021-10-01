@@ -13,7 +13,7 @@ This repository contains the code used in the paper:
 
 
 
-Movies of two illustrative trials of the experiments condicted on [Robotarium](https://www.robotarium.gatech.edu/) are also made available for download. 
+Movies of two illustrative trials of the experiments conducted on [Robotarium](https://www.robotarium.gatech.edu/) are also made available for download. 
 
 
 * Preview of the experiment implementing the Peer-to-peer strategy
