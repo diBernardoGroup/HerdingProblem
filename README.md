@@ -13,7 +13,7 @@ This repository contains the code used in the paper:
 
 
 
-Movies of two illustrative trials of the experiments condicted on Robotarium [1] are also made available for download. 
+Movies of two illustrative trials of the experiments condicted on [Robotarium](https://www.robotarium.gatech.edu/) are also made available for download. 
 
 
 * Preview of the experiment implementing the Peer-to-peer strategy
@@ -25,12 +25,6 @@ https://user-images.githubusercontent.com/43496649/135498304-44ec2dcb-c1f1-42b9-
 
 https://user-images.githubusercontent.com/43496649/135499152-e4f843de-692e-4907-b00f-86c446024012.mp4
 
-
-
-
-
-
-[1] Sean Wilson, et al., "The Robotarium: Globally Impactful Opportunities, Challenges, and Lessons Learned in Remote-Access, Distributed Control of Multirobot Systems," in IEEE Control Systems Magazine, vol. 40, no. 1, pp. 26-44, Feb. 2020.
 
 
 
