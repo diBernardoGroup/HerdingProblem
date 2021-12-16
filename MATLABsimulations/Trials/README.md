@@ -1,0 +1,1 @@
+This folder stores trials .mat files
